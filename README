@@ -1,4 +1,11 @@
-<h1>Welcome to T's Calculator</h1>
+Welcome to T's Calculator
 
-<p>This is just a simple calculator class that uses RSpec for 
-testing.</p>
+This is just a simple calculator class that uses RSpec for 
+testing.
+
+Right now it just has basic calculator functions like addition, subtraction, 
+multiplication, division, additive inverse.  It also has memory that will 
+remember one value and allow you to add to or subtract from that value.
+
+Happy Calculating,
+theTizzo
