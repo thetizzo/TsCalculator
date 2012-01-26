@@ -52,27 +52,27 @@ describe TsCalculator do
     end
 
     it "should initialize memory to 0" do
-      @calc.mr.should eq(0)
+      @calc.mem_recall.should eq(0)
     end
 
     it "should be able to add to memory" do
-      @calc.m_plus(5)
-      @calc.mr.should eq(5)
+      @calc.mem_plus(5)
+      @calc.mem_recall.should eq(5)
     end
 
     it "should be able to subtract from memory" do
-      @calc.m_minus(3)
-      @calc.mr.should eq(2)
+      @calc.mem_minus(3)
+      @calc.mem_recall.should eq(2)
     end
 
     it "should remember memory" do
-      @calc.mr.should eq(2)
+      @calc.mem_recall.should eq(2)
     end
 
     it "should be able to clear memory" do
-      @calc.mr.should eq(2)
-      @calc.mc
-      @calc.mr.should eq(0)
+      @calc.mem_recall.should eq(2)
+      @calc.mem_clear
+      @calc.mem_recall.should eq(0)
     end
   end
 end

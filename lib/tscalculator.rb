@@ -27,19 +27,19 @@ class TsCalculator
     number * -1
   end
 
-  def m_plus(number)
+  def mem_plus(number)
     @memory = @memory + number
   end
 
-  def m_minus(number)
+  def mem_minus(number)
     @memory = @memory - number
   end
 
-  def mc
+  def mem_clear
     @memory = 0
   end
 
-  def mr
+  def mem_recall
     @memory
   end
 end
