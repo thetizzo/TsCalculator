@@ -67,6 +67,10 @@ describe TsCalculator do
     it "should convert a number to a percentage" do
       @calc.percent(42).should eq(0.42)
     end
+
+    it "should calculate factorials" do
+      @calc.factorial(5).should eq(120)
+    end
   end
 
   describe "Memory Functions" do

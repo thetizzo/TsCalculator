@@ -47,6 +47,14 @@ class TsCalculator
     divide(number, 100)
   end
 
+  def factorial(number)
+    if number == 0
+      1
+    else
+      number * factorial(number - 1)
+    end
+  end
+
   def mem_plus(number)
     @memory = @memory + number
   end
