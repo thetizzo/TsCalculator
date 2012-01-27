@@ -55,8 +55,6 @@ describe TsCalculator do
       @calc.exp(2, 4).should eq(16)
       @calc.exp(2, 0).should eq(1)
       @calc.exp(2, -1).should eq(0.5)
-      @calc.exp(-1, 2).should eq(1)
-      @calc.exp(-1, 3).should eq(-1)
     end
   end
 
