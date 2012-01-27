@@ -24,7 +24,15 @@ class TsCalculator
   end
 
   def opposite(number)
-    number * -1
+    -number
+  end
+
+  def sqr(number)
+    exp(number, 2)
+  end
+
+  def exp(base, exp)
+    base ** exp
   end
 
   def mem_plus(number)

@@ -42,6 +42,18 @@ describe TsCalculator do
       @calc.opposite(5).should eq(-5)
       @calc.opposite(-5).should eq(5)
     end
+
+    it "should be able to square a number" do
+      @calc.sqr(5).should eq(25)
+    end
+
+    it "should be able to exponentiate a number by any power" do
+      @calc.exp(2, 4).should eq(16)
+      @calc.exp(2, 0).should eq(1)
+      @calc.exp(2, -1).should eq(0.5)
+      @calc.exp(-1, 2).should eq(1)
+      @calc.exp(-1, 3).should eq(-1)
+    end
   end
 
   describe "Memory Functions" do
