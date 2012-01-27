@@ -71,6 +71,15 @@ describe TsCalculator do
     it "should calculate factorials" do
       @calc.factorial(5).should eq(120)
     end
+
+    it "should calculate square roots" do
+      @calc.sqr_root(9).should eq(3)
+    end
+
+    it "should calculate nth roots" do
+      @calc.root(27, 3).should eq(3)
+      @calc.root(16, 4).should eq(2)
+    end
   end
 
   describe "Memory Functions" do

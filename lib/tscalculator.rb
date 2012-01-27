@@ -55,6 +55,15 @@ class TsCalculator
     end
   end
 
+  def root(base, exp)
+    exp = divide(1, exp)
+    power(base, exp)
+  end
+
+  def sqr_root(number)
+    root(number, 2)
+  end
+
   def mem_plus(number)
     @memory = @memory + number
   end
