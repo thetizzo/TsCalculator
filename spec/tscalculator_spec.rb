@@ -10,6 +10,7 @@ describe TsCalculator do
       @calc.add(1, 1).should eq(2)
       @calc.add(1, 0).should eq(1)
       @calc.add(1, -1).should eq(0)
+      @calc.add(0.5, 0.25).should eq(0.75)
     end
 
     it "should be able to do subtraction" do
@@ -17,6 +18,7 @@ describe TsCalculator do
       @calc.subtract(0, -1).should eq(1)
       @calc.subtract(1, 0).should eq(1)
       @calc.subtract(-1, 0).should eq(-1)
+      @calc.subtract(0.5, 0.25).should eq(0.25)
     end
 
     it "should be able to multiply by 0 correctly" do
@@ -32,6 +34,7 @@ describe TsCalculator do
     it "should be able to divide" do
       @calc.divide(1, 1).should eq(1)
       @calc.divide(9, 3).should eq(3)
+      @calc.divide(5, 10).should eq(0.5)
     end
 
     it "should return an error when dividing by zero" do
@@ -52,9 +55,17 @@ describe TsCalculator do
     end
 
     it "should be able to exponentiate a number by any power" do
-      @calc.exp(2, 4).should eq(16)
-      @calc.exp(2, 0).should eq(1)
-      @calc.exp(2, -1).should eq(0.5)
+      @calc.power(2, 4).should eq(16)
+      @calc.power(2, 0).should eq(1)
+      @calc.power(2, -1).should eq(0.5)
+    end
+
+    it "should do multiplicative inverse" do
+      @calc.reciprocal(2).should eq(0.5)
+    end
+
+    it "should convert a number to a percentage" do
+      @calc.percent(42).should eq(0.42)
     end
   end
 

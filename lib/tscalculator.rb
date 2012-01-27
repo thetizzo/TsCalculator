@@ -17,7 +17,7 @@ class TsCalculator
 
   def divide(num1, num2)
     unless num2 == 0
-      num1 / num2
+      num1 / num2.to_f
     else
       "Can't divide by 0"
     end
@@ -27,16 +27,24 @@ class TsCalculator
     -number
   end
 
-  def exp(base, exp)
+  def power(base, exp)
     base ** exp
   end
 
   def sqr(number)
-    exp(number, 2)
+    power(number, 2)
   end
 
   def cube(number)
-    exp(number, 3)
+    power(number, 3)
+  end
+
+  def reciprocal(number)
+    power(number, -1)
+  end
+
+  def percent(number)
+    divide(number, 100)
   end
 
   def mem_plus(number)
