@@ -27,12 +27,16 @@ class TsCalculator
     -number
   end
 
+  def exp(base, exp)
+    base ** exp
+  end
+
   def sqr(number)
     exp(number, 2)
   end
 
-  def exp(base, exp)
-    base ** exp
+  def cube(number)
+    exp(number, 3)
   end
 
   def mem_plus(number)

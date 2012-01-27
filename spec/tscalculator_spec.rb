@@ -47,6 +47,10 @@ describe TsCalculator do
       @calc.sqr(5).should eq(25)
     end
 
+    it "should be able to cube a number" do
+      @calc.cube(5).should eq(125)
+    end
+
     it "should be able to exponentiate a number by any power" do
       @calc.exp(2, 4).should eq(16)
       @calc.exp(2, 0).should eq(1)
