@@ -1,11 +1,22 @@
 Welcome to T's Calculator
 
 This is just a simple calculator class that uses RSpec for 
-testing.
+testing.  It will eventually have all the same functions as 
+the calculator app on your iPhone.
 
-Right now it just has basic calculator functions like addition, subtraction, 
-multiplication, division, additive inverse.  It also has memory that will 
-remember one value and allow you to add to or subtract from that value.
+Features:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+  - Additive Inverse
+  - Exponentiation
+  - Multiplicative Inverse
+  - Percentage
+  - Memory Recall
+  - Memory Clear
+  - Memory Add
+  - Memory Subtract
 
 Happy Calculating,
 theTizzo
