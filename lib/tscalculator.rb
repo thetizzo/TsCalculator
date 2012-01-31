@@ -1,3 +1,5 @@
+require 'mathn'
+
 class TsCalculator
   def initialize
     @memory = 0
@@ -62,6 +64,14 @@ class TsCalculator
 
   def sqr_root(number)
     root(number, 2)
+  end
+
+  def log(number)
+    Math.log10(number)
+  end
+
+  def ln(number)
+    Math.log(number)
   end
 
   def mem_plus(number)

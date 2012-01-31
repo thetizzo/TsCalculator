@@ -80,6 +80,14 @@ describe TsCalculator do
       @calc.root(27, 3).should eq(3)
       @calc.root(16, 4).should eq(2)
     end
+
+    it "should calculate logarithms of base 10" do
+      @calc.log(10).should eq(Math.log10(10))
+    end
+
+    it "should calculate natural logarithms" do
+      @calc.ln(5).should eq(Math.log(5))
+    end
   end
 
   describe "Memory Functions" do
