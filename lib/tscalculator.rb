@@ -74,6 +74,30 @@ class TsCalculator
     Math.log(number)
   end
 
+  def sin(number)
+    Math.sin(number)
+  end
+
+  def cos(number)
+    Math.cos(number)
+  end
+
+  def tan(number)
+    Math.tan(number)
+  end
+
+  def sinh(number)
+    Math.sinh(number)
+  end
+
+  def cosh(number)
+    Math.cosh(number)
+  end
+
+  def tanh(number)
+    Math.tanh(number)
+  end
+
   def mem_plus(number)
     @memory = @memory + number
   end

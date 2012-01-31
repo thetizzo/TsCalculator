@@ -88,6 +88,15 @@ describe TsCalculator do
     it "should calculate natural logarithms" do
       @calc.ln(5).should eq(Math.log(5))
     end
+
+    it "should calculate basic trig functions" do
+      @calc.sin(90).should eq(Math.sin(90))
+      @calc.cos(90).should eq(Math.cos(90))
+      @calc.tan(90).should eq(Math.tan(90))
+      @calc.sinh(90).should eq(Math.sinh(90))
+      @calc.cosh(90).should eq(Math.cosh(90))
+      @calc.tanh(90).should eq(Math.tanh(90))
+    end
   end
 
   describe "Memory Functions" do
