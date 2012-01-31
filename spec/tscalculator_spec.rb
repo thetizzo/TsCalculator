@@ -97,6 +97,14 @@ describe TsCalculator do
       @calc.cosh(90).should eq(Math.cosh(90))
       @calc.tanh(90).should eq(Math.tanh(90))
     end
+
+    it "should calculate e^x" do
+      @calc.exp(5).should eq(Math.exp(5))
+    end
+
+    it "should have a constant equal to pi" do
+      TsCalculator::PI.should eq(Math::PI)
+    end
   end
 
   describe "Memory Functions" do

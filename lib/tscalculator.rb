@@ -1,6 +1,9 @@
 require 'mathn'
 
 class TsCalculator
+
+  PI = Math::PI
+
   def initialize
     @memory = 0
   end
@@ -96,6 +99,10 @@ class TsCalculator
 
   def tanh(number)
     Math.tanh(number)
+  end
+
+  def exp(number)
+    Math.exp(number)
   end
 
   def mem_plus(number)
