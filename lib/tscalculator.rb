@@ -63,7 +63,7 @@ class TsCalculator
   end
 
   def sqr_root(number)
-    root(number, 2)
+    Math.sqrt(number)
   end
 
   def log(number)
