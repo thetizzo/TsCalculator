@@ -1,7 +1,7 @@
 require 'tscalculator'
 
 describe TsCalculator do 
-  describe "Arithmetic Functions" do
+  context "Arithmetic Functions" do
     before(:each) do
       @calc = TsCalculator.new
     end
@@ -107,7 +107,7 @@ describe TsCalculator do
     end
   end
 
-  describe "Memory Functions" do
+  context "Memory Functions" do
     # Doing a before :all here so that I can use the same
     # calculator instance so my tests model the memory function
     before(:all) do
